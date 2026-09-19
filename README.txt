@@ -3,7 +3,7 @@ MD. SAIMUR RAHMAN SAIMON — PERSONAL PORTFOLIO
 Files:
 - index.html — complete responsive portfolio website
 - profile.png — profile photo used in the hero section
-- Md-Saimur-Rahman-Saimon-CV.pdf — CV
+- Md-Saimur-Rahman-Saimon-CV-Final-Updated.pdf — CV
 
 Quick start:
 1. Keep all files/folders together.
