@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portfolio of Md. Saimur Rahman Saimon">
+<title>Md. Saimur Rahman Saimon | Portfolio</title>
+<style>
+:root{--bg:#090811;--panel:#12101b;--text:#f7f4ff;--muted:#aaa4b8;--line:#ffffff14;--a:#a78bfa;--b:#f472b6;--c:#67e8f9;--ok:#86efac}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 Inter,system-ui,-apple-system,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.grid{position:fixed;inset:0;z-index:-3;opacity:.3;background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(#000,transparent 88%)}
+.glow{position:fixed;width:520px;height:520px;border-radius:50%;filter:blur(110px);opacity:.12;z-index:-2;pointer-events:none}.g1{background:var(--a);top:-220px;left:-220px}.g2{background:var(--b);right:-260px;top:35%}
+header{position:sticky;top:14px;z-index:20;max-width:1180px;margin:14px auto 0;padding:10px 12px 10px 16px;border:1px solid var(--line);border-radius:20px;background:#0c0a12d9;backdrop-filter:blur(18px);display:flex;align-items:center;gap:25px}
+.brand{display:flex;align-items:center;gap:10px;min-width:235px}.mark{width:38px;height:38px;border:1px solid #a78bfa66;border-radius:12px;display:grid;place-items:center;color:var(--a);font-weight:900;background:#a78bfa12}.brand strong{display:block;font-size:13px}.brand small{color:var(--muted);font-size:10px}.nav{display:flex;gap:22px;justify-content:center;flex:1}.nav a{color:var(--muted);font-size:12px}.nav a:hover{color:#fff}.head-actions{display:flex;gap:8px;align-items:center}.theme,.menu{width:40px;height:40px;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:12px;cursor:pointer}.menu{display:none}.talk{padding:11px 16px;border-radius:12px;background:linear-gradient(135deg,var(--a),var(--b));color:#150d1c;font-weight:800;font-size:12px}
+main{max-width:1180px;margin:auto}.section{padding:105px 0}.hero{min-height:790px;display:grid;grid-template-columns:1.35fr .75fr;gap:65px;align-items:center;padding-top:95px}
+.eyebrow,.label,.pill{display:inline-flex;align-items:center;border:1px solid #a78bfa55;background:#a78bfa0e;color:var(--a);border-radius:999px;padding:6px 11px;font-size:10px;text-transform:uppercase;letter-spacing:.5px}.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 12px var(--ok);margin-right:7px}.kicker{font-size:20px;color:var(--muted);margin:25px 0 4px}
+h1{font-size:clamp(48px,7vw,84px);line-height:.98;letter-spacing:-5px;margin:0 0 22px}h1 span,h2 span{background:linear-gradient(90deg,var(--c),var(--a),var(--b));-webkit-background-clip:text;color:transparent}
+.hero h2{font-size:clamp(24px,3vw,37px);line-height:1.15;letter-spacing:-1.5px;margin:0 0 18px}.hero p{max-width:700px;color:var(--muted);font-size:15px}.buttons{display:flex;gap:9px;flex-wrap:wrap;margin:29px 0 42px}.btn{padding:13px 17px;border:1px solid var(--line);border-radius:12px;background:var(--panel);font-weight:750;font-size:12px}.primary{background:linear-gradient(135deg,var(--a),var(--b));color:#150d1c;border:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;border-top:1px solid var(--line);padding-top:20px}.stats b{display:block;color:var(--c);font-size:24px}.stats span{font-size:10px;color:var(--muted)}
+.photo{aspect-ratio:4/5;border-radius:28px;border:1px solid var(--line);background:radial-gradient(circle at 70% 20%,#a78bfa44,transparent 35%),radial-gradient(circle at 25% 80%,#f472b633,transparent 35%),linear-gradient(145deg,#191525,#0d0a12);display:grid;place-items:center;position:relative;overflow:hidden;box-shadow:0 30px 90px #0008}.avatar{width:min(100%,420px);aspect-ratio:4/5;border-radius:24px;overflow:hidden;border:1px solid #ffffff20;background:#0d0a12;box-shadow:0 0 80px #a78bfa22}.avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}.photo small{position:absolute;bottom:25px;color:var(--muted);font-size:10px}.identity{position:absolute;bottom:18px;left:18px;right:18px;padding:14px;border:1px solid var(--line);background:#100d17e8;border-radius:15px;display:flex;gap:12px;align-items:center}.identity .icon{width:38px;height:38px;border-radius:10px;background:#67e8f912;color:var(--c);display:grid;place-items:center}.identity strong{display:block;font-size:13px}.identity small{display:block;color:var(--muted);font-size:10px}.dot{margin-left:auto;width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 12px var(--ok)}
+.heading{margin-bottom:48px}.heading h2{font-size:clamp(35px,4.5vw,58px);line-height:1.03;letter-spacing:-3px;margin:14px 0}.heading p{max-width:700px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card,.project,.skill,.research,.contact{border:1px solid var(--line);background:linear-gradient(145deg,#ffffff08,#ffffff02);border-radius:22px}.card{padding:26px;min-height:210px}.icon{width:42px;height:42px;border-radius:12px;border:1px solid currentColor;display:grid;place-items:center;margin-bottom:20px}.cyan{color:var(--c)}.violet{color:var(--a)}.pink{color:var(--b)}.amber{color:#fbbf24}.card h3,.skill h3{font-size:17px;margin:0 0 7px}.card p,.skill p,.research p,.project p,.timeline p{color:var(--muted);font-size:12px}
+.timeline{border-left:1px solid var(--line);margin-left:18px;padding-left:38px}.item{position:relative;padding-bottom:45px;max-width:880px}.item:before{content:"";position:absolute;left:-48px;top:5px;width:15px;height:15px;border:3px solid var(--a);border-radius:50%;background:var(--bg);box-shadow:0 0 18px #a78bfa55}.meta{display:flex;gap:10px;align-items:center;margin-bottom:10px}.meta b{color:var(--a);font-size:9px;border:1px solid #a78bfa44;border-radius:99px;padding:5px 9px}.meta span{color:var(--muted);font-size:9px;letter-spacing:1px}.item h3{font-size:21px;margin:0}.item h4{color:var(--c);font-size:13px;margin:3px 0 8px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}.tags span{border:1px solid var(--line);color:var(--muted);background:#fff2;border-radius:999px;padding:5px 9px;font-size:9px}
+.split{display:flex;justify-content:space-between;align-items:end;gap:25px}.filters{display:flex;gap:7px}.filter{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:99px;padding:8px 13px;font-size:10px;cursor:pointer}.filter.active{color:#150d1c;background:linear-gradient(135deg,var(--a),var(--b));border:0}
+.projects{display:grid;grid-template-columns:1.25fr 1fr;gap:17px}.project{overflow:hidden}.visual{height:220px;display:grid;place-items:center;position:relative}.hospital{background:radial-gradient(circle at 25% 40%,#67e8f933,transparent 32%),linear-gradient(135deg,#151829,#0d1017)}.hospital strong{font-size:28px;letter-spacing:3px}.hospital strong span{color:var(--c)}.marine{background:linear-gradient(#17142c 0 45%,#24203b 45% 62%,#15111e 62%)}.sun{position:absolute;width:55px;height:55px;border-radius:50%;background:#fbbf24;top:38px;right:65px;box-shadow:0 0 45px #fbbf2488}.car{position:absolute;bottom:45px;left:35%;font-size:54px;color:var(--b)}.project-body{padding:24px}.project-body h3{font-size:21px;line-height:1.15;margin:13px 0 8px}.project-top{display:flex;justify-content:space-between;color:var(--muted);font-size:9px}.feature{margin:16px 0 0;padding-left:17px;color:var(--muted);font-size:11px}.feature li{margin:5px 0}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.skill{padding:24px;min-height:220px}.skill-title{display:flex;gap:11px;align-items:center;margin-bottom:22px}.skill-title .icon{margin:0}.bars{display:grid;gap:14px}.bars label{font-size:11px}.bars em{float:right;color:var(--muted);font-size:9px;font-style:normal}.bar{height:5px;background:#fff1;border-radius:99px;margin-top:6px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--a),var(--c));border-radius:99px}
+.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.research{padding:27px;min-height:290px}.num{color:var(--a);font-size:11px;letter-spacing:2px}.research h3{font-size:19px;line-height:1.25;margin:25px 0 10px}
+.quote{padding:60px;border:1px solid var(--line);border-radius:27px;background:linear-gradient(135deg,#a78bfa1c,#f472b60d)}.quote h2{font-size:clamp(38px,5vw,68px);line-height:1.03;letter-spacing:-3px;margin:15px 0}.quote p{color:var(--muted);max-width:620px}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:17px}.contact{padding:24px}.row{display:flex;gap:13px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}.row:last-child{border:0}.row .icon{margin:0;width:38px;height:38px}.row small{display:block;color:var(--muted);font-size:9px}.row strong{font-size:12px}.available{background:linear-gradient(145deg,#a78bfa18,#f472b609)}.available h3{font-size:28px;line-height:1.1;margin:22px 0 8px}.available p{color:var(--muted);font-size:13px;margin-bottom:22px}
+footer{max-width:1180px;margin:auto;border-top:1px solid var(--line);padding:27px 0 40px;color:var(--muted);font-size:10px;display:flex;gap:10px;align-items:center}.foot-right{margin-left:auto;text-transform:uppercase;letter-spacing:1px;font-size:8px}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:1000px){header,main,footer{margin-left:20px;margin-right:20px}.hero{grid-template-columns:1fr .72fr}.cards,.skills-grid,.research-grid{grid-template-columns:repeat(2,1fr)}.projects,.contact-grid{grid-template-columns:1fr}}
+@media(max-width:760px){header{margin:8px 12px 0}.brand{min-width:auto}.brand small{display:none}.nav{display:none;position:absolute;top:62px;left:0;right:0;padding:12px;background:#0d0b14f7;border:1px solid var(--line);border-radius:15px;flex-direction:column;gap:0}.nav.open{display:flex}.nav a{padding:10px}.menu{display:block}.talk{display:none}.section{padding:75px 0}.hero{grid-template-columns:1fr;padding-top:70px}.hero h1{font-size:48px;letter-spacing:-3px}.stats{grid-template-columns:repeat(2,1fr)}.cards,.skills-grid,.research-grid{grid-template-columns:1fr}.split{align-items:flex-start;flex-direction:column}.filters{flex-wrap:wrap}.quote{padding:34px 24px}.quote h2{font-size:42px}footer{flex-wrap:wrap}.foot-right{width:100%;margin:0}}
+</style>
+</head>
+<body>
+<div class="grid"></div><div class="glow g1"></div><div class="glow g2"></div>
+<header>
+<a class="brand" href="#home"><span class="mark">SR</span><span><strong>Md. Saimur Rahman</strong><small>Software Developer</small></span></a>
+<nav class="nav" id="nav"><a href="#about">About</a><a href="#journey">Journey</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#research">Research</a><a href="#contact">Contact</a></nav>
+<div class="head-actions"><button class="theme" id="theme">◐</button><a class="talk" href="#contact">Let's Talk ↗</a><button class="menu" id="menu">☰</button></div>
+</header>
+
+<main>
+<section class="section hero" id="home">
+<div class="reveal">
+<span class="eyebrow"><i></i> Open to opportunities</span>
+<p class="kicker">Hi, I'm</p>
+<h1>Md. Saimur <span>Rahman Saimon</span></h1>
+<h2>I build practical <span>software & data solutions.</span></h2>
+<p>Final-semester Computer Science & Engineering student in Dhaka, Bangladesh, focused on software development, Data Science, Data Mining, Machine Learning, and Human-Computer Interaction.</p>
+<div class="buttons"><a class="btn primary" href="#projects">Explore My Work ↘</a><a class="btn" href="#contact">Get In Touch</a><a class="btn" href="Md-Saimur-Rahman-Saimon-CV.pdf" target="_blank">Download CV</a></div>
+<div class="stats"><div><b>02</b><span>Featured Projects</span></div><div><b>03</b><span>Research Projects</span></div><div><b>07+</b><span>Core Languages</span></div><div><b>2026</b><span>Expected Graduation</span></div></div>
+</div>
+<div class="photo reveal"><div class="avatar"><img src="profile.png" alt="Md. Saimur Rahman Saimon"></div><div class="identity"><span class="icon">⌁</span><span><strong>AIUB — CSE</strong><small>Final Semester · Dhaka, Bangladesh</small></span><i class="dot"></i></div></div>
+</section>
+
+<section class="section" id="about"><div class="heading reveal"><span class="label">About</span><h2>Engineering ideas into <span>useful software.</span></h2><p>I enjoy turning ideas into practical systems, learning through projects, and exploring research problems where software, data, and intelligent systems meet.</p></div>
+<div class="cards">
+<article class="card reveal"><span class="icon cyan">⌘</span><h3>Software Development</h3><p>Building maintainable applications with modern web technologies, databases, and secure role-based workflows.</p></article>
+<article class="card reveal"><span class="icon violet">◈</span><h3>Data Science & Mining</h3><p>Interested in extracting useful patterns from data and applying analytical methods to real-world problems.</p></article>
+<article class="card reveal"><span class="icon pink">✦</span><h3>Machine Learning</h3><p>Exploring practical ML, explainable approaches, prediction, clustering, and research-driven problem solving.</p></article>
+<article class="card reveal"><span class="icon amber">◎</span><h3>Human-Computer Interaction</h3><p>Interested in creating useful, understandable, and user-centered digital experiences.</p></article>
+</div></section>
+
+<section class="section" id="journey"><div class="heading reveal"><span class="label">Journey</span><h2>Education & <span>milestones.</span></h2><p>The academic path and project-focused direction shaping my engineering mindset.</p></div>
+<div class="timeline">
+<article class="item reveal"><div class="meta"><b>Current</b><span>FINAL SEMESTER</span></div><h3>B.Sc. in Computer Science & Engineering</h3><h4>American International University-Bangladesh</h4><p>Expected graduation: December 2026. Academic focus includes Data Science, Data Mining, Machine Learning, HCI, and MIS.</p><div class="tags"><span>DS</span><span>DM</span><span>ML</span><span>HCI</span><span>MIS</span></div></article>
+<article class="item reveal"><div class="meta"><b>Research</b><span>ONGOING</span></div><h3>Applied Research Projects</h3><h4>Data · ML · Smart Systems</h4><p>Research work spanning spatial demand prediction, critical-mineral supply-chain resilience, and tangible smart-system interaction.</p><div class="tags"><span>Research</span><span>ML</span><span>Data Analysis</span></div></article>
+<article class="item reveal"><div class="meta"><b>Projects</b><span>COMPLETED</span></div><h3>Software & Graphics Projects</h3><h4>Web Development · C++ · OpenGL</h4><p>Built a role-based hospital management system and an interactive 2D graphics project.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>C++</span><span>OpenGL</span></div></article>
+</div></section>
+
+<section class="section" id="projects"><div class="heading split reveal"><div><span class="label">Featured Work</span><h2>Projects I've <span>built.</span></h2><p>A selection of academic and practical software projects.</p></div><div class="filters"><button class="filter active" data-f="all">All</button><button class="filter" data-f="web">Web</button><button class="filter" data-f="graphics">Graphics</button></div></div>
+<div class="projects">
+<article class="project reveal" data-cat="web"><div class="visual hospital"><strong>MEDI<span>TRUST</span></strong></div><div class="project-body"><div class="project-top"><span class="pill">Featured</span><span>WEB SYSTEM</span></div><h3>MediTrust — Hospital Management System</h3><p>Role-based healthcare management system for patients, doctors, appointments, billing, and laboratory records.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>AJAX</span><span>API</span></div><ul class="feature"><li>Session-based authentication</li><li>Role-based access control</li><li>Database-driven backend</li></ul></div></article>
+<article class="project reveal" data-cat="graphics"><div class="visual marine"><i class="sun"></i><span class="car">▰</span></div><div class="project-body"><div class="project-top"><span class="pill">C++ Project</span><span>GRAPHICS</span></div><h3>Marine Drive View</h3><p>Interactive 2D graphics and animation project with keyboard/mouse interaction and day/night scene switching.</p><div class="tags"><span>C++</span><span>OpenGL</span><span>GLUT</span></div><ul class="feature"><li>2D rendering & animation</li><li>Interactive moving objects</li><li>Day/night switching</li></ul></div></article>
+</div></section>
+
+<section class="section" id="skills"><div class="heading reveal"><span class="label">Expertise</span><h2>The tools in my <span>stack.</span></h2><p>Languages, frameworks, databases, and developer tools I use to build software.</p></div>
+<div class="skills-grid">
+<article class="skill reveal"><div class="skill-title"><span class="icon cyan">〈/〉</span><div><h3>Languages</h3><small>Core programming</small></div></div><div class="bars"><div><label>Python</label><em>Strong</em><div class="bar"><i style="width:88%"></i></div></div><div><label>C++</label><em>Strong</em><div class="bar"><i style="width:82%"></i></div></div><div><label>JavaScript</label><em>Strong</em><div class="bar"><i style="width:80%"></i></div></div><div><label>Java / PHP / C# / SQL</label><em>Working</em><div class="bar"><i style="width:72%"></i></div></div></div></article>
+<article class="skill reveal"><div class="skill-title"><span class="icon violet">▦</span><div><h3>Frontend & UI</h3><small>Web experience</small></div></div><div class="tags"><span>React.js</span><span>Next.js</span><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span><span>Responsive Design</span></div></article>
+<article class="skill reveal"><div class="skill-title"><span class="icon pink">▣</span><div><h3>Databases</h3><small>Data systems</small></div></div><div class="tags"><span>MySQL</span><span>Oracle Database</span><span>SQL Server</span><span>DBMS</span></div></article>
+<article class="skill reveal"><div class="skill-title"><span class="icon amber">⚙</span><div><h3>Tools & Workflow</h3><small>Development</small></div></div><div class="tags"><span>Git</span><span>GitHub</span><span>Linux</span><span>Trello</span><span>Agile / Scrum</span></div></article>
+<article class="skill reveal"><div class="skill-title"><span class="icon cyan">◎</span><div><h3>Research Areas</h3><small>Academic focus</small></div></div><div class="tags"><span>Data Science</span><span>Data Mining</span><span>Machine Learning</span><span>HCI</span><span>MIS</span></div></article>
+<article class="skill reveal"><div class="skill-title"><span class="icon violet">↗</span><div><h3>Professional Strengths</h3><small>How I work</small></div></div><div class="tags"><span>Analytical Thinking</span><span>Creative Problem Solving</span><span>Punctuality</span><span>Time Management</span></div></article>
+</div></section>
+
+<section class="section" id="research"><div class="heading reveal"><span class="label">Research</span><h2>Exploring problems through <span>data & intelligence.</span></h2><p>Research-oriented work connecting machine learning, spatial analysis, resilience, and smart interaction.</p></div>
+<div class="research-grid">
+<article class="research reveal"><span class="num">01</span><h3>Spatial Cohort Stratification for Localized Urban Bike-Sharing Demand Prediction in Seoul</h3><p>A spatial machine-learning framework for station-level bike-sharing demand prediction using K-Means clustering and cohort-based analysis.</p><div class="tags"><span>K-Means</span><span>Spatial Analysis</span><span>Cohort Analysis</span></div></article>
+<article class="research reveal"><span class="num">02</span><h3>Critical-Mineral Supply Chain Resilience Analysis</h3><p>An explainable ML framework to analyze critical-mineral supply-chain risk and resilience under geopolitical disruptions.</p><div class="tags"><span>Machine Learning</span><span>Explainable AI</span><span>Resilience</span></div></article>
+<article class="research reveal"><span class="num">03</span><h3>Tangible Interaction Based Smart Hydration Reminder Bottle</h3><p>A smart hydration reminder system that automatically tracks water consumption using weight-based sensing.</p><div class="tags"><span>Smart Systems</span><span>Weight Sensing</span><span>HCI</span></div></article>
+</div></section>
+
+<section class="section"><div class="quote reveal"><span class="label">My Approach</span><h2>Learn continuously.<br><span>Build thoughtfully.</span><br>Improve relentlessly.</h2><p>I believe good engineering combines clean implementation, practical problem solving, and a willingness to keep learning.</p></div></section>
+
+<section class="section" id="contact"><div class="heading reveal"><span class="label">Contact</span><h2>Let's build something <span>useful together.</span></h2><p>Open to internships, software opportunities, research collaboration, and meaningful projects.</p></div>
+<div class="contact-grid"><div class="contact reveal">
+<a class="row" href="mailto:saimurrahmansaimon@gmail.com"><span class="icon cyan">✉</span><span><small>Email</small><strong>saimurrahmansaimon@gmail.com</strong></span></a>
+<a class="row" href="tel:+8801820572204"><span class="icon violet">⌕</span><span><small>Phone</small><strong>+880 1820-572204</strong></span></a>
+<a class="row" href="https://github.com/Md-SaimurRahman" target="_blank"><span class="icon pink">◉</span><span><small>GitHub</small><strong>Md-SaimurRahman</strong></span></a>
+<a class="row" href="https://www.linkedin.com/in/md-saimur-rahman-a1a307438/" target="_blank"><span class="icon cyan">in</span><span><small>LinkedIn</small><strong>Md. Saimur Rahman</strong></span></a>
+<div class="row"><span class="icon amber">⌖</span><span><small>Location</small><strong>Dhaka, Bangladesh</strong></span></div>
+</div>
+<div class="contact available reveal"><span class="eyebrow"><i></i> Available for opportunities</span><h3>Have a project or opportunity?</h3><p>I'd be happy to connect and discuss software development, research, or collaboration.</p><a class="btn primary" href="mailto:saimurrahmansaimon@gmail.com?subject=Portfolio%20Contact">Send Email ↗</a></div></div></section>
+</main>
+
+<footer><span class="mark">SR</span><span>© 2026 Md. Saimur Rahman Saimon</span><span class="foot-right">Designed & built with curiosity · Dhaka, Bangladesh</span></footer>
+
+<script>
+const nav=document.getElementById('nav'),menu=document.getElementById('menu'),theme=document.getElementById('theme');
+menu.onclick=()=>{nav.classList.toggle('open');menu.textContent=nav.classList.contains('open')?'✕':'☰'};
+document.querySelectorAll('.nav a').forEach(a=>a.onclick=()=>{nav.classList.remove('open');menu.textContent='☰'});
+theme.onclick=()=>{document.body.classList.toggle('light');theme.textContent=document.body.classList.contains('light')?'☀':'◐'};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+document.querySelectorAll('.filter').forEach(f=>f.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));f.classList.add('active');const v=f.dataset.f;document.querySelectorAll('.project').forEach(p=>p.style.display=v==='all'||p.dataset.cat===v?'block':'none')});
+</script>
+</body>
+</html>
