@@ -31,6 +31,48 @@ footer{max-width:1180px;margin:auto;border-top:1px solid var(--line);padding:27p
 .reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
 @media(max-width:1000px){header,main,footer{margin-left:20px;margin-right:20px}.hero{grid-template-columns:1fr .72fr}.cards,.skills-grid,.research-grid{grid-template-columns:repeat(2,1fr)}.projects,.contact-grid{grid-template-columns:1fr}}
 @media(max-width:760px){header{margin:8px 12px 0}.brand{min-width:auto}.brand small{display:none}.nav{display:none;position:absolute;top:62px;left:0;right:0;padding:12px;background:#0d0b14f7;border:1px solid var(--line);border-radius:15px;flex-direction:column;gap:0}.nav.open{display:flex}.nav a{padding:10px}.menu{display:block}.talk{display:none}.section{padding:75px 0}.hero{grid-template-columns:1fr;padding-top:70px}.hero h1{font-size:48px;letter-spacing:-3px}.stats{grid-template-columns:repeat(2,1fr)}.cards,.skills-grid,.research-grid{grid-template-columns:1fr}.split{align-items:flex-start;flex-direction:column}.filters{flex-wrap:wrap}.quote{padding:34px 24px}.quote h2{font-size:42px}footer{flex-wrap:wrap}.foot-right{width:100%;margin:0}}
+
+/* Swapnajatra Project Design */
+.swapnajatra {
+  background: linear-gradient(135deg, #162b38, #10151f);
+  padding: 24px;
+  text-align: center;
+}
+
+.swapnajatra strong {
+  font-size: 23px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.swapnajatra strong span {
+  display: block;
+  color: #67e8f9;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.project-links a {
+  padding: 10px 15px;
+  border: 1px solid #67e8f9;
+  border-radius: 8px;
+  color: #67e8f9;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-links a:hover {
+  background: #67e8f9;
+  color: #10151f;
+}
+
 </style>
 </head>
 <body>
@@ -50,7 +92,7 @@ footer{max-width:1180px;margin:auto;border-top:1px solid var(--line);padding:27p
 <h2>I build practical <span>software & data solutions.</span></h2>
 <p>Final-semester Computer Science & Engineering student in Dhaka, Bangladesh, focused on software development, Data Science, Data Mining, Machine Learning, and Human-Computer Interaction.</p>
 <div class="buttons"><a class="btn primary" href="#projects">Explore My Work ↘</a><a class="btn" href="#contact">Get In Touch</a><a class="btn" href="Md-Saimur-Rahman-Saimon-CV-Final-Updated.pdf" target="_blank">Download CV</a></div>
-<div class="stats"><div><b>02</b><span>Featured Projects</span></div><div><b>03</b><span>Research Projects</span></div><div><b>07+</b><span>Core Languages</span></div><div><b>2026</b><span>Expected Graduation</span></div></div>
+<div class="stats"><div><b>03</b><span>Featured Projects</span></div><div><b>03</b><span>Research Projects</span></div><div><b>07+</b><span>Core Languages</span></div><div><b>2026</b><span>Expected Graduation</span></div></div>
 </div>
 <div class="photo reveal"><div class="avatar"><img src="profile.png" alt="Md. Saimur Rahman Saimon"></div><div class="identity"><span class="icon">⌁</span><span><strong>AIUB — CSE</strong><small>Final Semester · Dhaka, Bangladesh</small></span><i class="dot"></i></div></div>
 </section>
@@ -72,6 +114,55 @@ footer{max-width:1180px;margin:auto;border-top:1px solid var(--line);padding:27p
 
 <section class="section" id="projects"><div class="heading split reveal"><div><span class="label">Featured Work</span><h2>Projects I've <span>built.</span></h2><p>A selection of academic and practical software projects.</p></div><div class="filters"><button class="filter active" data-f="all">All</button><button class="filter" data-f="web">Web</button><button class="filter" data-f="graphics">Graphics</button></div></div>
 <div class="projects">
+  
+<article class="project reveal" data-cat="web">
+  <div class="visual swapnajatra">
+    <strong>SWAPNAJATRA <span>PROPERTIES</span></strong>
+  </div>
+
+  <div class="project-body">
+    <div class="project-top">
+      <span class="pill">Full-Stack Project</span>
+      <span>WEB APPLICATION</span>
+    </div>
+
+    <h3>Swapnajatra Properties Ltd.</h3>
+
+    <p>
+      A full-stack real estate platform with property
+      listings, enquiries, visit requests, and a
+      database-driven admin CMS.
+    </p>
+
+    <div class="tags">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Node.js</span>
+      <span>Express</span>
+      <span>PostgreSQL</span>
+    </div>
+
+    <ul class="feature">
+      <li>Dynamic property listings</li>
+      <li>Admin CMS and content management</li>
+      <li>Authentication and database integration</li>
+    </ul>
+
+    <div class="project-links">
+      <a href="https://github.com/Md-SaimurRahman/swapnajatra-properties"
+         target="_blank" rel="noopener noreferrer">
+        GitHub ↗
+      </a>
+
+      <a href="https://md-saimurrahman.github.io/swapnajatra-properties/"
+         target="_blank" rel="noopener noreferrer">
+        Live Website ↗
+      </a>
+    </div>
+  </div>
+</article>
+
 <article class="project reveal" data-cat="web"><div class="visual hospital"><strong>MEDI<span>TRUST</span></strong></div><div class="project-body"><div class="project-top"><span class="pill">Featured</span><span>WEB SYSTEM</span></div><h3>MediTrust — Hospital Management System</h3><p>Role-based healthcare management system for patients, doctors, appointments, billing, and laboratory records.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>AJAX</span><span>API</span></div><ul class="feature"><li>Session-based authentication</li><li>Role-based access control</li><li>Database-driven backend</li></ul></div></article>
 <article class="project reveal" data-cat="graphics"><div class="visual marine"><i class="sun"></i><span class="car">▰</span></div><div class="project-body"><div class="project-top"><span class="pill">C++ Project</span><span>GRAPHICS</span></div><h3>Marine Drive View</h3><p>Interactive 2D graphics and animation project with keyboard/mouse interaction and day/night scene switching.</p><div class="tags"><span>C++</span><span>OpenGL</span><span>GLUT</span></div><ul class="feature"><li>2D rendering & animation</li><li>Interactive moving objects</li><li>Day/night switching</li></ul></div></article>
 </div></section>
